@@ -7,6 +7,8 @@ import datamodel.Customer;
 import datamodel.Order;
 import datamodel.OrderItem;
 import datamodel.RawDataFactory;
+import system.DataFactory.IDGenerator;
+import system.DataFactory.IDTYPE;
 
 
 /**
@@ -148,7 +150,7 @@ final class DataFactory implements Components.DataFactory {
 
 	enum IDTYPE { ALPHANUM, AIRLINE, NUM, HEX, BIN };
 
-	private class IDGenerator {
+	public class IDGenerator {
 		private final String prefix;
 		private final int len;
 		private final String alphabet;
