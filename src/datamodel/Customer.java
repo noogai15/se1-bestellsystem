@@ -1,6 +1,6 @@
 package datamodel;
 
-import system.Components.OutputProcessor;
+import system.OutputProcessor;
 
 public class Customer {
 	final String id;

@@ -71,7 +71,7 @@ public final class Application_2 {
 		//Neue Kunden
 		Customer cTimo = dataFactory.createCustomer( "Werner, Timo", "tw@gmail.com");
 		
-		Customer cSandra = dataFactory.createCustomer( "Müller, Sandra", "samue62@gmx.de");
+		Customer cSandra = dataFactory.createCustomer( "Mueller, Sandra", "samue62@gmx.de");
 		//Neue Artikel
 		Article aKMaschine = dataFactory.createArticle( "Kaffeemaschine", 2999, 500); 
 		Article aTeeKocher = dataFactory.createArticle( "Teekocher", 1999, 2000);

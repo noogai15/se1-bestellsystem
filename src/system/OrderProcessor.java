@@ -1,10 +1,12 @@
-package datamodel;
+package system;
 
 import java.util.function.Consumer;
 
-import system.Components;
+import datamodel.Order;
+import datamodel.OrderItem;
 import system.InventoryManager;
-import system.OrderProcessor;
+
+
 
 final class OrderProcessor implements Components.OrderProcessor{
 	
