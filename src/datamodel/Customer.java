@@ -3,7 +3,7 @@ package datamodel;
 import system.OutputProcessor;
 
 public class Customer {
-	final String id;
+	private final String id;
 	public String firstName;
 	public String lastName;
 	public String contact;
@@ -13,7 +13,7 @@ public class Customer {
 		this.id = id;
 		this.contact = contact;
 		this.firstName = "";
-		this.lastName = "";
+		this.lastName = name;
 	}
 
 	public String getId() {
@@ -22,7 +22,7 @@ public class Customer {
 	}
 
 	public String getFirstName() {
-		return firstName;
+		return this.firstName;
 	}
 
 	public void setFirstName(String firstName) {
@@ -31,7 +31,7 @@ public class Customer {
 	}
 
 	public String getlastName() {
-		return lastName;
+		return this.lastName;
 	}
 
 	public void setLastName(String lastName) {

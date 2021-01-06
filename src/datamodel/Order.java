@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Order {
-	final long id;
-	final Date date;
-	Customer customer = null;
-	final ArrayList<OrderItem> items;
+	private final long id;
+	private final Date date;
+	private Customer customer = null;
+	private final ArrayList<OrderItem> items;
 
 
 	

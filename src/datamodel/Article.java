@@ -1,10 +1,10 @@
 package datamodel;
 
 public class Article {
-	String id;
-	String description;
-	long unitPrice;
-	int unitsInStore;
+	private String id;
+	private String description;
+	private long unitPrice;
+	private int unitsInStore;
 
 	protected Article(String id, String descr, long price, int units) {
 		this.id = id;
