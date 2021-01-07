@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 
 import datamodel.Article;
 import datamodel.Customer;
-import datamodel.Order;
+import datamodel.Order;	
 import datamodel.OrderItem;
 import datamodel.RawDataFactory;
 import system.DataFactory.IDGenerator;
@@ -310,7 +310,10 @@ public interface Components {
 		 * @param customer object referred to
 		 * @return name derived from first- and lastName attributes
 		 */
-		String singleName( Customer customer );
+		static String singleName( Customer customer ) {
+			// TODO Auto-generated method stub
+			return null;
+		}
 
 		
 		

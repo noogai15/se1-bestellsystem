@@ -35,15 +35,30 @@ public class Article {
 	}
 	
 	public void setUnitPrice(long price) {
+		
+		if (price < 0) {
+			
+		this.unitPrice = 0;
+		
+		}
+		else {
 		this.unitPrice = price;
+		}
 	}
 	
 	public int getUnitsInStore() {
 		return unitsInStore;
 	}
 	
-	public void setUnitsInStore(int number) {
-		this.unitsInStore = number;
+	public void setUnitsInStore(int l) {
+		if (l < 0) {
+			
+			this.unitsInStore = 0;
+			
+			}
+			else {
+			this.unitsInStore = l;
+			}
 	}
 	
 	

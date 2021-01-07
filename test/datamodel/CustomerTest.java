@@ -83,7 +83,7 @@ public class CustomerTest {
 	/*
 	 * Test constructor, special case with empty String arguments.
 	 */
-	//@Test
+	@Test
 	public void test002_EmptyArgumentConstructor() {
 		Customer c = new Customer( "", "", "" );
 		assertEquals( c.getId(), "" );
@@ -95,7 +95,7 @@ public class CustomerTest {
 	/*
 	 * Test constructor, Test special case with null arguments.
 	 */
-	//@Test
+	@Test
 	public void test003_NullArgumentConstructor() {
 		Customer c = new Customer( null, null, null );
 		assertNull( c.getId() );					// assert null for id
@@ -104,7 +104,7 @@ public class CustomerTest {
 		assertEquals( c.getContact(), "" );			// "" returned for contact: null
 	}
 
-	//@Test
+	@Test
 	public void test010_SetFirstName() {
 		final String firstName = "Max";
 		cEric.setFirstName( firstName );			// regular case
@@ -117,7 +117,7 @@ public class CustomerTest {
 		assertEquals( cEric.getFirstName(), "" );	// -> ""
 	}
 
-	//@Test
+	@Test
 	public void test011_SetLastName() {
 		final String lastName = "Meier";
 		cEric.setLastName( "Meier" );				// regular case
@@ -130,7 +130,7 @@ public class CustomerTest {
 		assertEquals( cEric.getlastName(), "" );	// -> ""
 	}
 
-	//@Test
+	@Test
 	public void test012_SetContact() {
 		final String contact = "0170-2345924";
 		cEric.setContact( contact );				// regular case

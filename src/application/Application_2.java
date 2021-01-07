@@ -17,7 +17,10 @@ public final class Application_2 {
 	public final static int printLineWidth = 95;
 
 
-	  public static void main( String[] args ) {
+	  /**
+	 * @param args
+	 */
+	public static void main( String[] args ) {
 		  		  
 	    System.out.println( "SE1-Bestellsystem" );
 	    ComponentFactory componentFactory = ComponentFactory.getInstance();

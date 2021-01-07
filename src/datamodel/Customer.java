@@ -11,9 +11,9 @@ public class Customer {
 
 	protected Customer(String id, String name, String contact) {
 		this.id = id;
-		this.contact = contact;
+		setContact(contact);
 		this.firstName = "";
-		this.lastName = name;
+		setLastName(name);
 	}
 
 	public String getId() {
@@ -26,7 +26,13 @@ public class Customer {
 	}
 
 	public void setFirstName(String firstName) {
+		if (firstName == null) {
+			
+			this.firstName = "";
+		} else {
+		
 		this.firstName = firstName;
+		}
 
 	}
 
@@ -35,8 +41,14 @@ public class Customer {
 	}
 
 	public void setLastName(String lastName) {
+		
+		if (lastName == null) {
+			
+			this.lastName = "";
+		} else {
+		
 		this.lastName = lastName;
-
+		}
 	}
 
 	public String getName() {/*
@@ -45,22 +57,9 @@ public class Customer {
 	}
 
 	public void setName(String name) {
-		/*if(name.contains(","))
-				{
-			String[] firstLastName = name.split(",");
-			this.firstName = firstLastName[1].trim();
-			this.lastName = firstLastName[0].trim();
-		}else {
-			String[] firstLastName = name.split(" ");
-			this.lastName = firstLastName[1].trim();
-			this.lastName = firstLastName[firstLastName.length - 1].trim();
-			this.firstName = firstLastName[0].trim();
-			int a = firstLastName.length - 1;
-			for (int i = 1; i < a; i++) {
-				this.firstName = this.firstName + " " + firstLastName[i];
-			}
 
-		}*/
+		
+		
 
 	}
 
@@ -69,9 +68,16 @@ public class Customer {
 	}
 
 	public void setContact(String contact) {
+	if (contact == null) {
+			
+			this.contact = "";
+		} else {
+		
 		this.contact = contact;
-
+		}
 	}
+
+	
 
 	public static void main(String[] args) {
 

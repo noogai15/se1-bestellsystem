@@ -12,7 +12,12 @@ public class Order {
 	
 	protected Order (long id, Date date, Customer customer){
 		this.id = id;
+		if (date == null) {
+			
+			this.date = new Date();
+		}else {
 		this.date = date;
+		}
 		this.customer = customer;
 		this.items = new ArrayList<OrderItem>();
 		
@@ -37,7 +42,7 @@ public class Order {
 
 	}
 	
-	public int count(ArrayList<OrderItem> items) {
+	public int count() {
 		int i;
 		for(i = 0; i <= items.size(); i++) {
 		}
@@ -54,7 +59,7 @@ public class Order {
 		return this;
 	}
 	
-	public Order clearItems(OrderItem item) {
+	public Order clearItems() {
 		for (OrderItem item1 : items) {
 			items.remove(item1);
 		}
